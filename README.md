@@ -1,6 +1,6 @@
-# template-vanilla
+# js-basic-initials-adding-tricky-part-of-code
 
-## Text
+## Uncomment commented code and fix possible errors. After this try call notify() in console
 
 ## Criteria:
 
