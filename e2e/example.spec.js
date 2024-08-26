@@ -1,8 +1,9 @@
 import { test, expect } from '@playwright/test';
+import { join } from 'path';
 
 test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+  await page.goto(`file://${join(__dirname, '../src/index.html')}`);
+  const element = await page.locator('.toast-body');
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+  expect(await element.innerText()).toBe('Hi all');
 });
