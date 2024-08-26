@@ -1,0 +1,36 @@
+{
+  "name": "template-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest",
+    "test:e2e": "playwright test",
+    "linter": "eslint src/",
+    "build": "vite build",
+    "dev": "vite dev --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@playwright/test": "^1.46.0",
+    "@testing-library/dom": "^10.4.0",
+    "@types/node": "^22.1.0",
+    "eslint": "^9.8.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.2.5",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.5"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "eslintIgnore": [
+    "src/dist"
+  ]
+}
