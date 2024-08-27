@@ -1,8 +1,8 @@
 const notificationWrapper = document.querySelector('.notifications');
 
 /**
-* @param {string} text
-*  @param {number?} time
+*@param {string} text
+*@param {number?} time
  */
 
 function notify(text, time = 5000) {
